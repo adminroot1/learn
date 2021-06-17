@@ -1,0 +1,9 @@
+git branch --set-upstream-to=remotes/origin/master  master  git与github分支关联
+
+
+git remote add origin   https://github.com/adminroot1/learn.git  建立远程仓库连接
+
+
+git push origin master  提交本地库文件到远程仓库中
+
+  
