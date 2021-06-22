@@ -31,7 +31,6 @@ import java.io.InputStream;
  *
  */
 public class MyBatisTest {
-	
 
 	public SqlSessionFactory getSqlSessionFactory() throws IOException {
 		String resource = "conf/mybatis-config.xml";
@@ -62,7 +61,7 @@ public class MyBatisTest {
 		SqlSession openSession = sqlSessionFactory.openSession();
 		try {
 			Employee employee = openSession.selectOne(
-					"com.atguigu.mybatis.EmployeeMapper.selectEmp", 1);
+					"com.atguigu.mybatis.dao.EmployeeMapper.selectEmp", 1);
 			System.out.println(employee);
 		} finally {
 			openSession.close();
