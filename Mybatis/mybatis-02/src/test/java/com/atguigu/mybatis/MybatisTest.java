@@ -1,8 +1,8 @@
 package com.atguigu.mybatis;
 
-import com.atguigu.mybatis.bean.Employee;
-import com.atguigu.mybatis.dao.EmployeeMapper;
-import com.atguigu.mybatis.dao.EmployeeMapperAnnotation;
+import com.atguigu.mybatis02.bean.Employee;
+import com.atguigu.mybatis02.dao.EmployeeMapper;
+import com.atguigu.mybatis02.dao.EmployeeMapperAnnotation;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;

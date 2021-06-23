@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<mapper xmlns="http://mybatis.org/schema/mybatis-mapper" namespace="com.atguigu.mybatis03.dao.EmployeeMapper" >
+    <!--
+        namespace:名称空间;指定为接口的全类名
+        id：唯一标识
+        resultType：返回值类型
+        #{id}：从传递过来的参数中取出id值
+        public Employee getEmpById(Integer id);
+    -->
+    <!--public Map<Integer, Employee> getEmpByLastNameLikeReturnMap(String lastName);  -->
+    <select id="getEmpByLastNameLikeReturnMap"  resultType="java.util.Map">
+        select * from tbl_employee where last_name like #{lastName}
+    </select>
+</mapper>

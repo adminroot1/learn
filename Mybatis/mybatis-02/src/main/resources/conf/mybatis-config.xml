@@ -33,7 +33,7 @@
         2、package:为某个包下的所有类批量起别名
         name：指定包名（为当前包以及下面所有的后代包的每一个类都起一个默认别名（类名小写），）
         -->
-        <package name="com.atguigu.mybatis.bean"/>
+        <package name="com.atguigu.mybatis02.bean"/>
         <!--3、批量起别名的情况下，使用@Alias注解为某个类型指定新的别名-->
     </typeAliases>
     <!--
@@ -103,6 +103,6 @@
         <!-- <mapper resource="mybatis/mapper/EmployeeMapper.xml"/> -->
         <!-- <mapper class="com.atguigu.mybatis.dao.EmployeeMapperAnnotation"/> -->
         <!--批量注册-->
-        <package name="com.atguigu.mybatis.dao"/>
+        <package name="com.atguigu.mybatis02.dao"/>
     </mappers>
 </configuration>
