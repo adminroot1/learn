@@ -2,7 +2,7 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper  namespace="com.atguigu.mybatis.dao.EmployeeMapper">
+<mapper  namespace="com.atguigu.mybatis02.dao.EmployeeMapper">
     <!--
     namespase：名称空间；指定为接口的全类名
     id：唯一的标识

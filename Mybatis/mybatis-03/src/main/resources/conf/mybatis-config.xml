@@ -8,7 +8,7 @@
         resource：引入类路径下的资源
         url：引入网络路径或者磁盘路径下的资源
     -->
-    <properties resource="dbconfig.properties"></properties>
+    <properties resource="conf/dbconfig.properties"></properties>
     <!--
         2.settings包含很多重要的设置项
         setting：用来设置每一个设置项

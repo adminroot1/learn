@@ -27,7 +27,7 @@ import java.io.InputStream;
  */
 public class MybatisTest {
     public SqlSessionFactory getSqlSessionFactory() throws IOException {
-        String path = "conf/mybatis-config.xml";
+        String path = "mybatis-config.xml";
         InputStream inputStream = Resources.getResourceAsStream(path);
         return new SqlSessionFactoryBuilder().build(inputStream);
     }
@@ -51,7 +51,7 @@ public class MybatisTest {
         SqlSessionFactory sqlSessionFactory = getSqlSessionFactory();
         SqlSession sqlSession = sqlSessionFactory.openSession();
         try {
-            Employee employee = sqlSession.selectOne("com.atguigu.mybatis.dao.EmployeeMapper.getEmpById", 1);
+            Employee employee = sqlSession.selectOne("com.atguigu.mybatis02.dao.EmployeeMapper.getEmpById", 1);
             System.out.println(employee);
         } finally {
             sqlSession.close();
