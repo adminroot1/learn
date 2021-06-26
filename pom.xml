@@ -10,6 +10,7 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>Mybatis</module>
+        <module>book_Example</module>
     </modules>
     <dependencies>
         <dependency>
