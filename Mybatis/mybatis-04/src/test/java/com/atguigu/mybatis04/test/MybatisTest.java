@@ -215,7 +215,7 @@ public class MybatisTest {
             EmployeeMapper mapper = openSession.getMapper(EmployeeMapper.class);
             //Employee employee = mapper.getEmpByIdAndLastName(1, "tom");
             Map<String, Object> map = new HashMap<>();
-            map.put("id", 2);
+            map.put("id", 3);
             map.put("lastName", "Tom");
             map.put("tableName", "tbl_employee");
             Employee employee = mapper.getEmpByMap(map);
@@ -243,7 +243,7 @@ public class MybatisTest {
 			/*Employee empAndDept = mapper.getEmpAndDept(1);
 			System.out.println(empAndDept);
 			System.out.println(empAndDept.getDept());*/
-            Employee employee = mapper.getEmpByIdStep(3);
+            Employee employee = mapper.getEmpByIdStep(1);
             System.out.println(employee);
             //System.out.println(employee.getDept());
             System.out.println(employee.getDept());

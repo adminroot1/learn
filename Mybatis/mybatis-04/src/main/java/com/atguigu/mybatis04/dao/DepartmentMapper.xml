@@ -17,16 +17,14 @@
     -->
     <!--    嵌套结果集方式，使用collection标签定义关联的集合类型的属性封装规则-->
     <resultMap id="MyDept" type="com.atguigu.mybatis04.bean.Department">
-        <id column="id" property="id">
-        </id>
-        <result column="dept_name" property="depatmentName">
-        </result>
+        <id column="id" property="id"></id>
+        <result column="dept_name" property="departmentName"></result>
         <!--
         collection定义关联集合类型的属性的封装对责
         ofType：指定集合里面元素的类型
         -->
         <collection property="emps" ofType="com.atguigu.mybatis04.bean.Employee">
-            <!--            定义这个集合中元素的封装规则-->
+            <!--定义这个集合中元素的封装规则-->
             <id column="eid" property="id"/>
             <result column="last_name" property="lastName"/>
             <result column="email" property="email"/>
@@ -43,7 +41,7 @@
     <resultMap id="MyDeptStep" type="com.atguigu.mybatis04.bean.Department">
         <id column="id" property="id" />
         <id column="dept_name" property="departmentName"/>
-        <collection property="emps" select="com.atguigu.mybatis04.dao.EmployeeMapperPlus"
+        <collection property="emps" select="com.atguigu.mybatis04.dao.EmployeeMapperPlus.getEmpsByDeptId"
                     column="{deptId=id}" fetchType="lazy">
         </collection>
     </resultMap>
