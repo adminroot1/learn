@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<mapper xmlns="http://mybatis.org/schema/mybatis-mapper" namespace="com.atguigu.mybatis04.dao.EmployeeMapper">
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.atguigu.mybatis04.dao.EmployeeMapper">
     <!--
         namespace:名称空间；指定为接口的全类名
         id：唯一标识
