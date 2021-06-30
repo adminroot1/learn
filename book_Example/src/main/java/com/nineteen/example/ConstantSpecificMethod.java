@@ -1,6 +1,5 @@
 package com.nineteen.example;
 
-import sun.tools.java.ClassPath;
 
 import java.text.DateFormat;
 import java.util.Date;
